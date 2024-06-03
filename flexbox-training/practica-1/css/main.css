@@ -1,0 +1,51 @@
+.header {
+  /* Selector de hermano general (~) en CSS */
+}
+.header h2 > p {
+  color: green;
+}
+.header h2 ~ p {
+  color: blue;
+}
+.header h2 + p {
+  color: red;
+}
+.header a {
+  color: white;
+  padding: 5;
+  background-color: teal;
+}
+.header a:hover {
+  background-color: darkcyan;
+}
+
+.card {
+  transition-property: color;
+  transition-duration: 3s;
+}
+
+.nav {
+  transition-property: clip-path;
+  transition-duration: 2s;
+}
+
+.footer {
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gallery picture {
+  flex: 300px;
+}
+.gallery picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

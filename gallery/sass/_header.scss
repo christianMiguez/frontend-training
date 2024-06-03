@@ -1,0 +1,43 @@
+
+@use 'sass:math';
+
+.header {    
+     /* Selector de hermano general (~) en CSS */
+
+    h2 {
+        > p {
+            color: green;
+        }
+    }
+    h2 {
+        ~ p {
+            color: blue;
+        }
+    }
+
+    h2 {
+        + p {
+            color: red;
+        }
+    }
+
+   
+
+    a {
+        color: white;
+        padding: math.div(10, 2);
+        background-color: teal;
+
+
+        &:hover {
+            background-color: darkcyan;
+        }
+    }
+
+}
+
+$condition: black;
+
+
+
+@debug ($condition == #000);
